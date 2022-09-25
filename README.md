@@ -33,7 +33,7 @@ For imaging large volumes, multiple sub-volumes (tiles) are sequentially acquire
 
 
 ### Registration #
-We developed [BigStream](https://github.com/GFleishman/bigstream) for robust and fully automated non-rigid registration of multi-round FISH data. BigStream first performs fast global affine transformation using a feature-based random sample consensus (RANSAC) algorithm. The image volume is then divided into overlapping blocks and another round of feature-based affine transformation is performed, followed by a fast 3D deformable registration [greedypy](https://github.com/GFleishman/greedypy) ([Yushkevich, 2016](https://github.com/pyushkevich/greedy)) on each block. Bigstream can be executed as part of the EASI-FISH pipeline. It also can be installed and used seperately. 
+We developed [BigStream](https://github.com/GFleishman/bigstream/tree/prototype) for robust and fully automated non-rigid registration of multi-round FISH data. BigStream first performs fast global affine transformation using a feature-based random sample consensus (RANSAC) algorithm. The image volume is then divided into overlapping blocks and another round of feature-based affine transformation is performed, followed by a fast 3D deformable registration [greedypy](https://github.com/GFleishman/greedypy) ([Yushkevich, 2016](https://github.com/pyushkevich/greedy)) on each block. Bigstream can be executed as part of the EASI-FISH pipeline. It also can be installed and used seperately. 
 
 `bigstream` can be installed with `pip`:
 ```
